@@ -1,0 +1,264 @@
+content:
+  - name: site
+    label: Site text & background
+    type: file
+    path: data/site.json
+    format: json
+    fields:
+      - name: theme
+        label: Background colour
+        type: object
+        fields:
+          - name: background
+            label: Background colour (hex)
+            type: string
+            description: "Use a 6-digit hex colour, for example #fff1e7 (light peach)."
+      - name: nav
+        label: Navigation labels
+        type: object
+        fields:
+          - name: what
+            label: What I make
+            type: string
+          - name: how
+            label: How it works
+            type: string
+          - name: guidance
+            label: Artist guidance
+            type: string
+          - name: project
+            label: Project button
+            type: string
+      - name: hero
+        label: Top section
+        type: object
+        fields:
+          - name: kicker
+            label: Small label
+            type: string
+          - name: title_start
+            label: Main heading (first line)
+            type: string
+          - name: title_end
+            label: Main heading (blue line)
+            type: string
+          - name: description
+            label: Intro paragraph
+            type: text
+          - name: primary_button
+            label: Main button
+            type: string
+          - name: secondary_button
+            label: Second button
+            type: string
+          - name: note
+            label: Short note under buttons
+            type: text
+          - name: photo_tag
+            label: Photo label
+            type: string
+          - name: photo_title
+            label: Photo caption heading
+            type: string
+          - name: photo_caption
+            label: Photo caption
+            type: text
+      - name: services
+        label: What I make
+        type: object
+        fields:
+          - name: kicker
+            label: Small label
+            type: string
+          - name: title_start
+            label: Heading (first line)
+            type: string
+          - name: title_end
+            label: Heading (second line)
+            type: string
+          - name: description
+            label: Section intro
+            type: text
+          - name: cosplay
+            label: Cosplay props
+            type: object
+            fields:
+              - name: title
+                label: Card title
+                type: string
+              - name: description
+                label: Card description
+                type: text
+              - name: button
+                label: Card button
+                type: string
+          - name: engineering
+            label: Engineering prototypes
+            type: object
+            fields:
+              - name: title
+                label: Card title
+                type: string
+              - name: description
+                label: Card description
+                type: text
+              - name: button
+                label: Card button
+                type: string
+          - name: artists
+            label: Artist guidance
+            type: object
+            fields:
+              - name: title
+                label: Card title
+                type: string
+              - name: description
+                label: Card description
+                type: text
+              - name: button
+                label: Card button
+                type: string
+          - name: electronics_title
+            label: Electronics heading
+            type: string
+          - name: electronics_description
+            label: Electronics description
+            type: text
+          - name: electronics_label
+            label: Electronics label
+            type: string
+      - name: process
+        label: How it works
+        type: object
+        fields:
+          - name: kicker
+            label: Small label
+            type: string
+          - name: title
+            label: Section heading
+            type: string
+          - name: description
+            label: Intro paragraph
+            type: text
+          - name: step1
+            label: Step 1
+            type: object
+            fields:
+              - name: number
+                label: Step label
+                type: string
+              - name: title
+                label: Step heading
+                type: string
+              - name: description
+                label: Step description
+                type: text
+          - name: step2
+            label: Step 2
+            type: object
+            fields:
+              - name: number
+                label: Step label
+                type: string
+              - name: title
+                label: Step heading
+                type: string
+              - name: description
+                label: Step description
+                type: text
+          - name: step3
+            label: Step 3
+            type: object
+            fields:
+              - name: number
+                label: Step label
+                type: string
+              - name: title
+                label: Step heading
+                type: string
+              - name: description
+                label: Step description
+                type: text
+      - name: guidance
+        label: Artist guidance section
+        type: object
+        fields:
+          - name: kicker
+            label: Small label
+            type: string
+          - name: title
+            label: Heading
+            type: string
+          - name: description
+            label: Description
+            type: text
+          - name: question_label
+            label: Question card label
+            type: string
+          - name: question
+            label: Example question
+            type: text
+          - name: button
+            label: Button text
+            type: string
+      - name: contact
+        label: Contact section
+        type: object
+        fields:
+          - name: kicker
+            label: Small label
+            type: string
+          - name: title
+            label: Heading
+            type: string
+          - name: description
+            label: Description
+            type: text
+          - name: tip_title
+            label: Tip heading
+            type: string
+          - name: tip_description
+            label: Tip text
+            type: text
+          - name: form_kicker
+            label: Contact card label
+            type: string
+          - name: form_title
+            label: Contact card heading
+            type: string
+          - name: form_description
+            label: Contact card text
+            type: text
+          - name: form_button
+            label: Contact button
+            type: string
+          - name: form_note
+            label: Small note
+            type: text
+      - name: maintenance
+        label: Coming-soon page
+        type: object
+        fields:
+          - name: kicker
+            label: Small label
+            type: string
+          - name: title
+            label: Heading
+            type: string
+          - name: message
+            label: Message
+            type: text
+          - name: instagram_label
+            label: Instagram button text
+            type: string
+          - name: instagram_url
+            label: Instagram profile link
+            type: string
+            description: Use the full profile URL beginning with https://
+      - name: footer
+        label: Footer
+        type: object
+        fields:
+          - name: copyright
+            label: Footer text
+            type: string
