@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff1e7">
+  <meta name="description" content="Layerform Studio is still getting ready. For now, say hello on Instagram.">
+  <title>Coming soon — Layerform Studio</title>
+  <style>
+    :root { color-scheme:light; --bg:#fff1e7; --surface:#fffaf6; --ink:#242623; --muted:#666d69; --line:#e3d4c8; --blue:#176bb5; --blue-hover:#105b9f; --blue-soft:#e8f1f8; --night:#202421; }
+    * { box-sizing:border-box; }
+    body { min-height:100vh; margin:0; display:grid; grid-template-rows:auto 1fr auto; background:var(--bg); color:var(--ink); font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; font-size:16px; line-height:1.55; -webkit-font-smoothing:antialiased; }
+    a:focus-visible { outline:3px solid var(--blue); outline-offset:3px; }
+    .wrap { width:min(1040px,calc(100% - 48px)); margin-inline:auto; }
+    header { min-height:76px; display:flex; align-items:center; border-bottom:1px solid var(--line); }
+    .brand { display:inline-flex; align-items:center; gap:11px; text-decoration:none; color:var(--ink); }
+    .brand-mark { width:30px; height:30px; display:grid; place-items:center; border:1.5px solid var(--blue); border-radius:8px; color:var(--blue); font-size:14px; font-weight:700; transform:rotate(-5deg); }
+    .brand-name { font-size:13px; font-weight:780; letter-spacing:.105em; line-height:1.1; }
+    .brand-name small { display:block; margin-top:4px; color:var(--muted); font-size:10px; font-weight:650; letter-spacing:.14em; }
+    main { display:grid; place-items:center; padding:56px 0; }
+    .card { width:min(660px,100%); padding:clamp(30px,6vw,66px); border:1px solid var(--line); border-radius:18px; background:var(--surface); box-shadow:0 12px 36px rgba(31,40,35,.07); text-align:center; }
+    .eyebrow { color:var(--muted); font-size:12px; letter-spacing:.12em; text-transform:uppercase; font-weight:700; }
+    h1 { max-width:520px; margin:17px auto 0; font-size:clamp(32px,6vw,48px); line-height:1.12; letter-spacing:-.045em; }
+    .message { max-width:490px; margin:17px auto 0; color:var(--muted); font-size:18px; line-height:1.65; }
+    .face { margin:27px auto 25px; width:112px; height:112px; display:grid; place-items:center; border-radius:50%; background:var(--blue-soft); color:var(--blue); font-size:48px; line-height:1; font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-weight:700; letter-spacing:-.08em; }
+    .instagram { display:inline-flex; min-height:48px; align-items:center; justify-content:center; gap:9px; padding:12px 18px; border-radius:8px; background:var(--blue); color:#fff; font-size:15px; font-weight:650; text-decoration:none; transition:background .18s ease,transform .18s ease; }
+    .instagram:hover { background:var(--blue-hover); transform:translateY(-1px); }
+    .handle-note { margin:14px 0 0; color:var(--muted); font-size:13px; }
+    footer { padding:18px 0; border-top:1px solid var(--line); color:var(--muted); font-size:12px; }
+    @media(max-width:540px) { .wrap { width:calc(100% - 36px); } header { min-height:68px; } main { padding:32px 0; } .card { padding:30px 22px; } .message { font-size:16px; } .face { width:96px; height:96px; font-size:40px; } }
+    @media(prefers-reduced-motion:reduce) { *,*::before,*::after { transition-duration:.01ms!important; } }
+  </style>
+</head>
+<body>
+  <header><div class="wrap"><a class="brand" href="index.html" aria-label="Layerform Studio home"><span class="brand-mark" aria-hidden="true">L</span><span class="brand-name">LAYERFORM<small>MAKER STUDIO</small></span></a></div></header>
+  <main>
+    <section class="card" aria-labelledby="page-title">
+      <div class="eyebrow">A little more time in the workshop</div>
+      <h1 id="page-title">We are still working on it…</h1>
+      <p class="message">Please be kind to us. Contact through instagram for the time being</p>
+      <div class="face" role="img" aria-label="A cute, sad anime-style face">(;_;)</div>
+      <a class="instagram" href="https://www.instagram.com/priyanshu_datta/" target="_blank" rel="noreferrer">Contact us on Instagram <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+  <footer><div class="wrap">Layerform Studio · Made in layers, made with care.</div></footer>
+</body>
+</html>
